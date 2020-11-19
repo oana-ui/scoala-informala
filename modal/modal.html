@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+        .modal {
+            position: absolute;
+            background-color: #f1f1f1;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+           
+        }
+        .content {
+            position: relative;
+            background-color: white;
+            padding: 1.5rem;
+            box-shadow: 0px 2px 10px 1px rgba(0,0,0,0.86);
+            width: 25%;
+        }
+
+        .x-icon {
+            position: absolute;
+            top: 16px;
+            right: 16px;
+            cursor: pointer;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            margin-top: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .form-group #name {
+            padding: 0.5rem;
+        }
+
+        .btn-section {
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .btn {
+            cursor: pointer;
+            padding: 0.5rem 1rem;
+            margin: 0.20rem;
+            border: none;
+            background-color: inherit;
+            color: #5346D3;
+            font-weight: 600;
+        }
+
+        .btn:hover {
+            background-color: #5346D3;
+            color: white;
+        }
+
+        input[type=text] {
+            border: 2px solid #E0E0E0;
+            font-weight: 600;
+            
+
+        }
+
+        input[type=text] {
+            color: #F0F0F0;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="modal">
+        <form class="content">
+            <h2>Modal  title</h2>
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" placeholder="Name">
+            </div>
+            <div class="btn-section">
+                <input class="btn" type="submit" value="Submit">
+                <button class="btn">Close</button>
+            </div>
+            <span class="x-icon">X</span>
+        </form>
+    </div>
+
+    
+</body>
+</html>
