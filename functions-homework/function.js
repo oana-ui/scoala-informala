@@ -1,4 +1,4 @@
--function equals(x, y) {
+function equals(x, y) {
     return x === y;
 }
 
@@ -110,7 +110,7 @@ function invers(n) {
 
 function produsImpare(n) {
 
-    let sum = 0; 
+    let sum = 1; 
     let counter = 0; 
     let i = 1; 
 
