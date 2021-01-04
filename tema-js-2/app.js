@@ -8,7 +8,7 @@ function getDigits(str) {
         }
     }
 
-    return arr; 
+    return arr.join(''); 
 }
 
 function isLetter(char) {
@@ -24,7 +24,7 @@ function getLetters(str) {
         }
     }
 
-    return arr;
+    return arr.join('');
 }
 
 function getFirst5Letters(str) {
@@ -37,7 +37,7 @@ function getFirst5Letters(str) {
         }
     }
 
-    return arr;
+    return arr.join('');
 }
 
 function concatenate(arr) {
@@ -60,7 +60,7 @@ function getAllDigits(arr) {
         } 
     }
 
-    return myArr;
+    return myArr.join('');
 }
 
 function invertAllStrings(arr) {
@@ -82,9 +82,19 @@ function factorial(num) {
     return result;
 }
 
+function allDivizors(num) {
+    let arr = [1];
+    for(let i = 2; i <= num; i++) {
+        if(num % i === 0) {
+            arr.push(i);
+        }
+    }
+    return arr;
+}
+
 function cmmdc(first, second) {
-    const divisorsFirst = divizori(first);
-    const divisorsSecond = divizori(second);
+    const divisorsFirst = allDivizors(first);
+    const divisorsSecond = allDivizors(second);
 
     const common = [];
 
@@ -164,7 +174,7 @@ function binarySearch(arr, num) {
 
 }
 
-function countBinarySearch(arr, num, counter = 0) {
+function countBinarySearch(arr, num, counter = 1) {
 
     if (arr.length === 1 && arr[0] != num) {
         return counter;
