@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Agenda</title>
+</head>
+<body>
+    <h1>Agenda</h1>
+
+    <main class="agenda-main">
+        <form data-type="add" class="agenda-main-form">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input id="name" type="text">
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone</label>
+                <input id="phone" type="number">
+            </div>
+            <input type="hidden" id="contact-id" value="999">
+            <input type="submit" id="add-btn" value="Add Contact">
+        </form>
+        <section class="agenda-main-contacts-section">
+            <div class="agenda-main-contacts-header">
+                <span>Name</span>
+                <span>Phone</span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="agenda-main-contacts-list">
+            </ul>
+        </section>
+
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>

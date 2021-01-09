@@ -1,0 +1,80 @@
+h1 {
+    color: black;
+    text-align: center;
+}
+
+body {
+    background-color: #fef8e1;
+}
+
+.agenda-main {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    
+}
+
+.agenda-main-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 50%;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.form-group {
+    flex: 50%;
+}
+
+.agenda-main-form {
+background-color: #feca27;
+
+
+}
+
+.agenda-main-contacts-section {
+    background-color:#feca27;
+    border-top: 5px solid white;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 50%;
+    margin: 0 auto;
+    padding: 1rem;
+
+}
+
+.agenda-main-contacts-header {
+    width: 100%;
+    text-align: left;
+}
+.agenda-main-contacts-list  {
+    width: 100%;
+    text-align: left;
+    padding: 0;
+    list-style-type: none;
+}
+.agenda-main-contacts-item {
+    width: 100%;
+}
+.agenda-main-contacts-item span, 
+.agenda-main-contacts-header span {
+    display: inline-block;
+    width: 24%;
+}
+
+.contact-remove,
+.contact-edit {
+    cursor: pointer;
+}
+
+#add-btn {
+    background-color: #3A34CE;
+    color: white;
+    border-radius: 5px;
+    width: 150px;
+    padding: 10px;
+    margin-top: 10px;
+}
+
