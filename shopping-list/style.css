@@ -1,0 +1,63 @@
+body {
+    background-color: #d0bcfe;
+    margin: 0;
+    padding: 0;
+}
+
+.line-through  {
+    text-decoration: line-through;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 0 auto;
+    background-color: whitesmoke;
+    align-items: center;
+    border-radius: 25px;
+    margin-top: 10px;
+   }
+
+   .sort-ascending-btn, .sort-descending-btn {
+       background-color: #DA70D6;
+       border-radius: 5px;
+       color: black;
+       margin: 10px;
+   }
+
+   .main-form-input {
+       padding: 8px;
+       border-color: #D3D3D3;
+   }
+   
+   .main-form-btn {
+       padding: 8px;
+       background-color: #3ded97;
+   }
+
+   .list-headers-name {
+    font-weight: bold;
+    margin-right: 60px;
+    
+   }
+
+   .list-headers-action {
+       font-weight: bold;
+       
+   }
+
+   .list-headers, .list-item {
+    list-style-type: none;
+    margin-right: 60px;
+    }
+
+   .list-item-action {
+       background-color: #FF7F50;
+       border-color: #D3D3D3;
+       border-radius: 5px;
+       margin-left: 120px;
+   }
+
+   
+   

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Validation Form</title>
+</head>
+<body>
+    <main class="main-content">
+        <div class="validaton-success-banner"></div>
+        <form class="main-form">
+            <section class="input-area">
+                <div class="form-group">
+                    <input type="text" id="firstName" class="input-element" placeholder="First Name">
+                </div>
+                <div class="form-group">
+                    <input type="text" id="lastName" class="input-element" placeholder="Last Name">
+                </div>
+                <div class="form-group">
+                    <h3>Gender</h3>
+                    <label for="male" >Male</label>
+                    <input type="radio" id="male" name="gender" value="Male" checked>
+                    <label for="female">Female</label>
+                    <input type="radio" id="female" name="gender" value="Female">
+                </div>
+                <div class="form-group">
+                    <textarea name="more-info" class="input-element" id="more-info"></textarea>
+                </div>
+                <button id="submit-btn">Submit</button>
+            </section>
+            <section class="img-area">
+                <img src="./images/login-img.jpg" alt="login-img">
+            </section>
+        </form>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
