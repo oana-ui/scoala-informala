@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Weather App</title>
+</head>
+<body>
+    <main class="main-content">
+        <form id="main-form">
+            <input type="text" name='city' id="city">
+            <button id="vremea">Afiseaza vremea</button>
+            <button id="prognoza">Afiseaza prognoza</button>
+        </form>
+        <span id="error"></span>
+        <section class="vremea-acum">
+            <div class="vremea-acum-titlu">
+                <h2>Vremea Acum</h2>
+                <hr>
+            </div>
+            <div class="vremea-acum-info">
+                <div class="vremea-acum-info-vreme">
+                    <span id="weather-img"></span>
+                    <span data-title="Descriere:" class="descriere"></span>
+                    <span data-title="Umiditate:" class="umiditate"></span>
+                    <span data-title="Presiune:" class="presiune"></span>
+                    <span data-title="Temperatura curent:" class="temperatura-curenta"></span>
+                    <span data-title="Minima zilei:" class="minima-zilei"></span>
+                    <span data-title="Maxima zilei:" class="maxima-zilei"></span>
+                </div>
+                <div class="vremea-acum-info-harta">
+                    <div id="map"></div>
+                </div>
+            </div>
+        </section>
+        <section class="prognoza">
+            <div class="prognoza-titlu">
+                <h2>Vremea in urmatoarele zile</h2>
+                <hr>
+            </div>
+            <ul class="prognoza-showcase">
+                
+            </ul>
+        </section>
+    </main>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCdQFDdiup2BngCsRSZlIWkHwF_ajqcdR8&callback=initMap&libraries=&v=weekly"
+        defer
+    ></script>
+    <script src="app.js"></script>
+</body>
+</html>
